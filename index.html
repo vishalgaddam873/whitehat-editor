@@ -69,9 +69,7 @@ crossorigin="anonymous"></script>
       });
       //// Create Firepad.
       var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, {
-        defaultText: `function draw(){
-                        background(120)
-                      }`
+        defaultText: 'function draw(){\n\tbackground(120)\n}'
       });
     }
     // Helper to get hash from end of URL or generate a random one.
