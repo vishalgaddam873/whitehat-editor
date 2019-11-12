@@ -12,12 +12,6 @@
       <script>
           var queryData =  window.location.href.split('?data=')[1]
           var data = JSON.parse(JSON.stringify(decodeURIComponent(queryData)))
-          var k = "function setup(){createCanvas(400, 400);}function draw() {background(120);}"
-          var j = "function setup(){createCanvas(400,400)} function draw(){background(120)}"
-          var m = "function setup(){createCanvas(400,400)} function draw(){background(120)}"
-          var o = encodeURIComponent(m)
-          console.log(o)
-          // console.log(j)
           eval(data)
       </script>
       </body>
